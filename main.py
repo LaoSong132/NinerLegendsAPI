@@ -78,6 +78,7 @@ for row in match_detail['teams']:
     teams_row['DragonKills'] = row['dragonKills']
     teams_row['Win'] = row['win']
     teams.append(teams_row)
+    team_number = team_number + 1
 
 
 participant_df = pd.DataFrame(participants)
