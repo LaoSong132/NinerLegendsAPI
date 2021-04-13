@@ -26,7 +26,7 @@ match_detail = watcher.match.by_id(my_region, last_match['gameId'])
 pd.set_option('display.max_columns', 16)
 pd.set_option('display.width', 2000)
 
-@app.route('/participants')
+@app.route('/')
 def participant_data():
     participants = []
     for row in match_detail['participants']:
